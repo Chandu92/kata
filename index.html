@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Task Tracker v2.0</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Task Tracker</h1>
+        <h2>v2.0</h2>
+      </header>
+      <div class="responsiveLayer">
+      <div id="leftPane" class="divAbove">
+        <h2><strong>Create a Task</strong></h2>
+        <form for="newTask">
+          <div class="fieldContainer"> 
+            <label for="taskName"><strong>Task Name</strong></label>            
+            <input id="taskName" type="text">
+          </div>
+
+          <div class="fieldContainer">
+            <label for="taskDate"><strong>Date</strong></label>
+              <input id="taskDate" type="date" placeholder="none">
+            </label>
+          </div>
+
+          <div class="fieldContainer"> 
+            <label for="taskAssignee"><strong>Assigned To</strong></label>
+              <input id="taskAssignee" type="text" >
+            </label>
+          </div>        
+
+          <button type="button">Submit</button>
+        </form>
+      </div>
+
+      <div id="rightPane" class="divBelow">
+        <h2><strong>Existing Tasks</strong></h2>
+        <table></table>
+      </div>
+    </div>
+</div>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
